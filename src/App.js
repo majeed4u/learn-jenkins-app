@@ -1,15 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-// import { useState } from 'react';
+import { useState } from 'react';
 
 function App() {
-  // const [count, setCount] = useState(0)
-  // function increaseCount() {
-  //   setCount(count + 1)
-  // }
-  // function decreaseCount() {
-  //   setCount(count - 1)
-  // }
+  const [count, setCount] = useState(0)
+  function increaseCount() {
+    setCount(count + 1)
+  }
+  function decreaseCount() {
+    setCount(count - 1)
+  }
   return (
     <div className="App">
       <header className="App-header">
@@ -23,11 +23,11 @@ function App() {
           Learn Jenkins on Udemy
         </a>
       </header>
-      {/* <p>
+      <p>
         Count: {count}
       </p>
       <button onClick={increaseCount}>Increase</button>
-      <button onClick={decreaseCount}>Decrease</button> */}
+      <button onClick={decreaseCount}>Decrease</button>
       <p>
         Application version: 1
       </p>
