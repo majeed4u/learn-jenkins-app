@@ -11,7 +11,7 @@ function App() {
     setCount(count - 1)
   }
   return (
-    <div className="App">
+    <div className="App space-y-4">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <a
@@ -23,11 +23,14 @@ function App() {
           Learn Jenkins on Udemy
         </a>
       </header>
-      <p>
-        Count: {count}
-      </p>
-      <button onClick={increaseCount}>Increase</button>
-      <button onClick={decreaseCount}>Decrease</button>
+
+      <div className=' flex items-center gap-x-4 justify-center'>
+        <button className=' btn btn-sm btn-outline' onClick={decreaseCount}>Decrease</button>
+        <p>
+          Count: {count}
+        </p>
+        <button className=' btn btn-sm btn-outline' onClick={increaseCount}>Increase </button>
+      </div>
       <p>
         Application version: 1
       </p>
